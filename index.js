@@ -5,17 +5,16 @@ const quotes = ["I've learned that people will forget what you said, people will
        "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment. - Tega Emoefe",
        "Without music, life would be a mistake. - Precious Emoefe",
        "Always forgive your enemies; nothing annoys them so much. - Diana Ben", 
-       "A friend is someone who knows all about you and still loves you - Men Emoefe", 
+       "A friend is someone who knows all about you and still loves you - Mena Emoefe", 
        "In three words I can sum up everything I've learned about life: it goes on - Nora Bill",
-       "Be the change that you wish to see in the world - Rita John",
-]
-const quoteButton = document.getElementById('quote-button');
-const quoteText = document.getElementById('quote');
+       "Be the change that you wish to see in the world - Rita John"];
 
-quoteButton.addEventListener('click', () =>{
-    const randomIndex = Math.floor(Math.random() *
-quotes.length);
+       const quoteButton = document.getElementById('quote-button');
+       const fristQuote = document.getElementById('quote');
 
-quoteText.textContent = quotes[randomIndex];  
+       quoteButton.addEventListener('click', () => {
+        const randomQuote = Math.floor(Math.random() * quotes.length);
+        fristQuote.textContent = quotes[randomQuote];
 
-});
+       })
+
